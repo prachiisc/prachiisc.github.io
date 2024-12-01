@@ -83,6 +83,7 @@ margin: 4px 4px;
 	   
 			<div id="subheader">Thesis Work </div>
 			<div id="subsubheader">Graph Clustering Approaches for Speaker Diarization</div>
+			
 			My research involves self-supervised and supervised clustering approaches for automatic speaker diarization in the context of conversational speech.
 			<div id="subsubheader">What is Speaker Diarization ?</div>
 			It is the task of partitioning an audio containing multiple speakers into segments assigning labels to the corresponding speakers.  
@@ -99,13 +100,21 @@ margin: 4px 4px;
 			<div id="paperlink"><a href="" id="paperlink">CEP Discussion Paper 0000</a></div>
 			-->
 			
-			<li>Graph Neural Network based speaker diarization
+			<li>Graph Neural Network based speaker diarization [<a href="">webpage</a>][<a href="">paper1</a>] [<a href="https://arxiv.org/pdf/2109.06824.pdf">paper2</a>]
 				<button type="button" class="collapsible">Abstract</button>
 				<div class="content">
-				<p> This work involve developing a supervised heirarchical clustering algorithm using graph neural networks for speaker diarization. 
+				<p> Speaker diarization, the task of segmenting an audio recording based on speaker identity, constitutes an important speech pre-processing step for several downstream applications.  
+					The conventional approach to diarization involves multiple steps of embedding extraction and clustering, which are often optimized in an isolated fashion.
+					While end-to-end diarization systems attempt to learn a single model for the task, they are often cumbersome to train and require large supervised datasets. In this paper, we propose an end-to-end supervised hierarchical clustering algorithm based on graph neural networks (GNN), called End-to-end Supervised HierARchical  Clustering (E-SHARC). 
+					The embedding extractor is initialized using a pre-trained x-vector model while the GNN model is trained initially using the x-vector embeddings from the pre-trained model. 
+					Finally, the E-SHARC model uses the  front-end mel-filterbank features as input and jointly optimizes the embedding extractor and the GNN clustering module,  performing representation learning, metric learning, and clustering with end-to-end optimization.
+					Further, with additional inputs from an external overlap detector, the E-SHARC approach is capable of predicting the  speakers in the overlapping speech regions. 
+					The experimental evaluation on benchmark datasets like AMI, Voxconverse and DISPLACE, 
+					illustrates that the proposed E-SHARC framework provides competitive diarization results using graph based clustering methods.       
+		
 				</p> 
 				</div></li>
-			<li>Self-supervised speaker diarization with path integral clustering
+			<li>Self-supervised speaker diarization with path integral clustering [<a href="https://arxiv.org/pdf/2104.09456.pdf">paper1</a>][<a href="https://arxiv.org/pdf/2109.06824.pdf">paper2</a>]
 					<button type="button" class="collapsible">Abstract</button>
 					<div class="content">
 					<p> This work involves learning representations using clustering based loss. 
@@ -117,7 +126,7 @@ margin: 4px 4px;
 					</p> 
 					</div></li>
 
-			<li>Self-Supervised Speaker Diarization
+			<li>Self-Supervised Speaker Diarization [<a href="http://leap.ee.iisc.ac.in/prachi/arxiv.org/pdf/2008.03960.pdf">paper</a>]
 				<button type="button" class="collapsible">Abstract</button>
 				<div class="content">
 				<p> The proposed approach is based on principles of self-supervised learning where the self-supervision is derived from the clustering algorithm. 
@@ -125,7 +134,7 @@ margin: 4px 4px;
 					The work is accepted in Interspeech 2020.
 				</p> 
 				</div></li>
-			<li>Third DIHARD speech diarization challenge
+			<li>Third DIHARD speech diarization challenge  [<a href="">paper</a>]
 					<button type="button" class="collapsible">Abstract</button>
 					<div class="content">
 					<p> Contributed in baseline system setup for the DIHARD-III challenge. 
@@ -135,20 +144,30 @@ margin: 4px 4px;
 						for telephone conversation and graph based clustering for multi-speaker conversations.
 					</p> 
 					</div></li>
-			<li>Speaker Diarization using Posterior Scaled VB-HMM<button type="button" class="collapsible">Abstract</button>
+			<li>Speaker Diarization using Posterior Scaled VB-HMM  [<a href="https://arxiv.org/pdf/2104.02359.pdf">paper1</a>] [<a href="./publications/DIHARD_2019_challenge_Prachi.pdf">paper2</a>]
+				<button type="button" class="collapsible">Abstract</button>
 			<div class="content">
 			<p>The project involves identifying different speakers present in different segment of a given audio recording from DIHARD dataset which has challenging scenarios including restaurants, clinical interviews, mother child conversations etc. using posterior scaled Variational Bayes - Hidden Markov Model. 
 				The work is published in Interspeech 2019.
 			</p>
 </div></li>
 			
-			<li>Diarization for multi-speaker test conditions in SRE 2018 challenge
+			<li>Diarization for multi-speaker test conditions in SRE 2018/2019 challenge <a href="./publications/icassp_leap_sre18.pdf">paper1</a>] [<a href="./publications/Odyssey2020_SRE.pdf">paper2</a>]
                 <button type="button" class="collapsible">Abstract</button>
                 <div class="content">
-                    <p>SRE 2018 challenge involved test conditions with multiple speaker. We perform diarization to extract individual speaker segments to score against the enrollment.
+                    <p>SRE 2018/2019 challenge involved test conditions with multiple speaker. We perform diarization to extract individual speaker segments to score against the enrollment.
 This work is published in ICASSP 2019.</p>
 				</div></li>
-			
+<div id="subheader">Other Research Work </div>	
+Audio Retrieval For Multimodal Design Documents: A New Dataset And Algorithms [<a href="https://prachiisc.github.io/doc2audio/">webpage</a>]
+	<button type="button" class="collapsible">Abstract</button>
+	<div class="content">
+	<p> We consider and propose a new problem of retrieving audio files relevant to multimodal design document inputs comprising both textual elements and visual imagery, e.g., birthday/greeting cards. 
+		In addition to enhancing user experience, integrating audio that matches the theme/style of these inputs also helps improve the accessibility of these documents (e.g., visually impaired people can listen to the audio instead). 
+		While recent work in audio retrieval exists, these methods and datasets are targeted explicitly towards natural images. However, our problem considers multimodal design documents (created by users using creative software) substantially different from a naturally clicked photograph. To this end, our first contribution is collecting and curating a new large-scale dataset called Melodic-Design (or MELON), comprising design documents representing various styles, themes, templates, illustrations, etc., paired with music audio.	</p> 
+	</div>
+	
+
 <div id="subheader"> Workshops and Conferences <!-- <em>aka</em> Partners-in-Crime: --></div>
 				<ul>
 					<li> Presented in ICASSP 2023, Greece
